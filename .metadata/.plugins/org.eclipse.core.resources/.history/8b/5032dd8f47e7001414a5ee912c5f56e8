@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name ="Sample Project">
+   <target name="run" depends="Compile">
+	</target>
+	<java>
+		<classpath path="staging"/>
+	</java>
+	<target name="Compile">
+		<javac includeantruntime="false" srcdir="./src" destdir="staging"/>
+	</target>
+</project>
